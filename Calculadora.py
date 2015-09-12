@@ -27,7 +27,7 @@ class Ui_Form(object):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(283, 240)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("../../Downloads/Cornmanthe3rd-Plex-Other-python.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8("Cornmanthe3rd-Plex-Other-python.ico")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form.setWindowIcon(icon)
         self.Pantalla = QtGui.QLineEdit(Form)
         self.Pantalla.setGeometry(QtCore.QRect(10, 10, 261, 25))
@@ -251,6 +251,8 @@ class Ui_Form(object):
         QtCore.QObject.connect(self.btnDiv, QtCore.SIGNAL(_fromUtf8("clicked()")), lambda:self.Agregar('/'))
         QtCore.QObject.connect(self.btnPar1, QtCore.SIGNAL(_fromUtf8("clicked()")), lambda:self.Agregar('('))
         QtCore.QObject.connect(self.btnPar2, QtCore.SIGNAL(_fromUtf8("clicked()")), lambda:self.Agregar(')'))
+        QtCore.QObject.connect(self.btnPunto, QtCore.SIGNAL(_fromUtf8("clicked()")), lambda:self.Agregar('.'))
+        
         QtCore.QObject.connect(self.btnIgual, QtCore.SIGNAL(_fromUtf8("clicked()")),self.Operaciones)
         
         
